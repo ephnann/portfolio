@@ -3,16 +3,17 @@ a, a:hover, a:focus, a:active {
     color: var(--text-variant);
     font-size: 1rem;
     font-weight: 400;
-    padding: 0.2rem 1.2rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    top: -6px;
 }
 
 a:hover {
     background-color: var(--extra-light);
     border-radius: 0.2rem;
 }
-
 #about {
-    margin: 2rem 10rem 4rem 10rem;
+    padding: 0 2rem;
 }
 body {
     margin: 0;
@@ -33,9 +34,6 @@ button:hover {
     background-color: var(--accent-dark);
 }
 .card {
-    display: grid;
-    grid-template-columns: 4fr 8fr;
-    grid-template-areas: 'w-image w-text';
     border-radius: var(--sp-1);
     transition: all var(--tm-2) ease;
 }
@@ -44,11 +42,27 @@ button:hover {
     transform: scale(1.01);
 }
 .container {
-    margin: 0 10rem;
     padding: 4rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#container-hero-t {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.centre-align {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.divider {
+    border-top: 1px solid var(--text-variant);
+}
+.divider-container {
+    max-width: 1024px;
+    padding: 2rem;
+    margin: 0 auto;
 }
 .grid-container {
     display: grid;
@@ -58,8 +72,12 @@ button:hover {
 }
 #homepage {
     background-color: var(--p-light);
-    padding: 0 10rem 4rem 10rem;
 }
+#hero-text {
+    margin: 0px;
+    padding: 2rem 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -69,21 +87,19 @@ html {
     background-size: contain;
     background-position: center;
     grid-area: image;
-
 }
 #logo-container img {
     margin: 0 2rem 0 0;
     height: 1.8rem;
     width: auto;
-    position: relative;
-    top: 3px;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 1.5rem 0;
-    padding: 1.5rem 0 0 0;
+    padding: 2rem;
+    max-width: 1008px;
+    margin: 0 auto;
 }
 
 #text-container {
@@ -91,19 +107,9 @@ nav {
     padding: 0 4rem 4rem 4rem;
 }
 #work {
-    margin: 0rem 10rem 6rem 10rem;
-}
-#w-image-container {
-    background-image: url("../images/shopping_mall.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    grid-area: w-image;
-    border-radius: var(--sp-1) 0 0 var(--sp-1);
+    padding: 0 2rem;
 }
 #w-text-container {
-    grid-area: w-text;
     padding: var(--sp-4);
 }
 #w-text-container button {
@@ -126,7 +132,7 @@ nav {
     position: relative;
     display: block;
     width: calc(131% + 1.3px);
-    height: 106px;
+    height: 108px;
 }
 
 .custom-shape-divider-top-1621582515 .shape-fill {
@@ -148,9 +154,33 @@ nav {
     position: relative;
     display: block;
     width: calc(127% + 1.3px);
-    height: 125px;
+    height: 124px;
 }
 
 .custom-shape-divider-bottom-1621582987 .shape-fill {
     fill: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'image' 'text';
+        margin: 2rem 0;
+    }
+    #image-container {
+        margin: 0  0 4rem 0;
+        height: 30vh;
+    }
+    #text-container {
+        padding: 2rem 0;
+    }
+    #work {
+        padding: 0 2rem;
+    }
+    .container {
+        padding: 2rem;
+    }
+    .divider-container {
+        padding: 0 2rem;
+    }
 }
