@@ -116,3 +116,6 @@
         --sc-12: calc(var(--sc-11) * var(--scalar-3));
     }
 }
+.spacer-1 {
+    height: 1rem;
+}

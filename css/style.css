@@ -36,6 +36,7 @@ button:hover {
 .card {
     border-radius: var(--sp-1);
     transition: all var(--tm-2) ease;
+    margin: 0 0 2rem 0;
 }
 .card:hover {
     box-shadow: var(--ev-3);
@@ -177,10 +178,34 @@ nav {
     #work {
         padding: 0 2rem;
     }
+    #work-h {
+        margin: 4rem 0;
+    }
     .container {
         padding: 2rem;
     }
     .divider-container {
         padding: 0 2rem;
+    }
+    .custom-shape-divider-top-1621582515 svg {
+        height: 96px;
+    }
+    .custom-shape-divider-bottom-1621582987 svg {
+        height: 64px;
+    }
+}
+@media screen and (max-width: 506px) {
+    a {
+        display: none;
+    }
+    .container {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .custom-shape-divider-top-1621582515 svg {
+        height: 64px;
+    }
+    .custom-shape-divider-bottom-1621582987 svg {
+        height: 48px;
     }
 }
