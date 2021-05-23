@@ -198,9 +198,11 @@ nav {
     a {
         display: none;
     }
+    .footer-container {
+        margin: 0 2rem;
+    }
     .container {
-        display: inline-block;
-        margin: 0 auto;
+        display: block;
     }
     .custom-shape-divider-top-1621582515 svg {
         height: 64px;
