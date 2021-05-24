@@ -69,7 +69,7 @@ button:hover {
     display: grid;
     grid-template-columns: 5fr 7fr;
     grid-template-areas: 'image text';
-    margin: 8rem 0;
+    margin: 4rem 0 4rem 0;
 }
 #homepage {
     background-color: var(--p-light);
