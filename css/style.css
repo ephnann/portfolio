@@ -110,10 +110,10 @@ nav {
 #work {
     padding: 0 2rem;
 }
-#w-text-container {
+.w-text-container {
     padding: var(--sp-4);
 }
-#w-text-container button {
+.w-text-container button {
     margin: var(--sp-2) 0;
 }
 
